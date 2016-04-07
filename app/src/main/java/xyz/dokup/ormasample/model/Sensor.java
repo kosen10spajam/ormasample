@@ -25,10 +25,10 @@ public class Sensor {
     public String name;
 
     @Column
-    public byte passCode[];
+    public String passCode;
 
     @Setter
-    public Sensor(@NonNull String macAddress, @NonNull String uuid, @NonNull String name, @NonNull byte[] passCode) {
+    public Sensor(@NonNull String macAddress, @NonNull String uuid, @NonNull String name, @NonNull String passCode) {
         this.macAddress = macAddress;
         this.uuid = uuid;
         this.name = name;

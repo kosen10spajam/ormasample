@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">OrmaSample</string>
+    <string name="create">Create</string>
+    <string name="mac_address">MAC address</string>
+    <string name="uuid">UUID</string>
+    <string name="name">Name</string>
+    <string name="pass_code">Pass code</string>
 </resources>
