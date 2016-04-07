@@ -1,7 +1,10 @@
 package xyz.dokup.ormasample.model;
 
+import android.support.annotation.NonNull;
+
 import com.github.gfx.android.orma.annotation.Column;
 import com.github.gfx.android.orma.annotation.PrimaryKey;
+import com.github.gfx.android.orma.annotation.Setter;
 import com.github.gfx.android.orma.annotation.Table;
 
 /**
@@ -23,4 +26,12 @@ public class Sensor {
 
     @Column
     public byte passCode[];
+
+    @Setter
+    public Sensor(@NonNull String macAddress, @NonNull String uuid, @NonNull String name, @NonNull byte[] passCode) {
+        this.macAddress = macAddress;
+        this.uuid = uuid;
+        this.name = name;
+        this.passCode = passCode;
+    }
 }
