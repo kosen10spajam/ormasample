@@ -1,4 +1,9 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+repositories {
+    jcenter()
+}
 
 android {
     compileSdkVersion 23
@@ -23,4 +28,7 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.2.1'
+
+    apt 'com.github.gfx.android.orma:orma-processor:2.4.1'
+    compile 'com.github.gfx.android.orma:orma:2.4.1'
 }
